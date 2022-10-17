@@ -14,15 +14,15 @@ function App() {
     async function main() {
       try {
         const obs = new OBSWebSocket();
-        if (Login.IP && Login.Portal && Login.Password == "") {
-          await obs.connect();
-        }
-        if (Login.IP && Login.Portal && Login.Password != "") {
+        // if (Login.IP && Login.Portal && Login.Password == "") {
+          // await obs.connect();
+        // }
+        // if (Login.IP && Login.Portal && Login.Password != "") {
           await obs.connect(
             `ws://${Login.IP}:${Login.Portal}`,
             `${Login.Password}`
           );
-        }
+        // }
         const datascenes = await obs.call("GetSceneList");
         setScenes(datascenes);
       } catch (e) {
@@ -30,7 +30,7 @@ function App() {
         alert(
           "Credenciais erradas! Faça o Login novamente e verifique se o OBS está aberto."
         );
-        navigate("/Validation");
+        navigate("/");
         window.location.reload(true);
       }
     }

@@ -2,3 +2,35 @@
     width: 100vw;
     height: 100vh;
 }
+
+// @media (max-width: 800px) {
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 32px;
+    padding-left: 12px;
+    background-color: #DFE6F9;
+    border-radius: 8px;
+    outline: none;
+}
+
+.button-login {
+    width: 300px;
+    height: 50px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+input,
+.button-login {
+    font-size: 14px;
+}
+
+// }

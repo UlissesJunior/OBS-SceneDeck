@@ -1,9 +1,11 @@
 @import "./login";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
 
 $color1: #FFFFFF;
 $color2: #603ae6;
 $color3: #E06391;
 $color4: #393B6B;
+$input-color: #DFE6F9;
 
 @font-face {
     font-family: 'Twitch';
@@ -16,6 +18,7 @@ $color4: #393B6B;
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
 }
 
 .container {

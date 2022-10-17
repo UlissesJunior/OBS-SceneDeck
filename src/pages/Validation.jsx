@@ -47,7 +47,7 @@ function Validation() {
           placeholder="Senha"
           type="text"
         />
-        <button onClick={AddLocalStorage}></button>
+        <button className="button-login" onClick={AddLocalStorage}>Login</button>
       </div>
     </>
   );
