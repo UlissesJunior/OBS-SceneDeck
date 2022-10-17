@@ -1,0 +1,60 @@
+@import "./login";
+
+$color1: #FFFFFF;
+$color2: #603ae6;
+$color3: #E06391;
+$color4: #393B6B;
+
+@font-face {
+    font-family: 'Twitch';
+    src: url(../fonts/Twitch.otf), url("/assets/fonts/Twitch.otf") format("otf");
+    font-display: swap;
+}
+
+* {
+    padding: 0px;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 12px;
+    background-color: $color2;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2vh;
+    font-family: 'Twitch';
+    font-size: 2.2vmin;
+    color: $color1;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+button, .button-deck {
+    width: 20vw;
+    height: 16vh;
+    margin-right: 2%;
+    border-radius: 16px;
+    font-size: 2vw;
+    color: $color1;
+    background-color: $color3;
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
+}
+
+button:hover {
+    border: 2px solid $color1;
+}
