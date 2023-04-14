@@ -15,7 +15,7 @@ function Validation() {
       Portal: portal,
       Password: password,
     };
-    localStorage.setItem("Login", JSON.stringify(data));
+    sessionStorage.setItem("Login", JSON.stringify(data));
   };
 
   async function AddLocalStorage() {
